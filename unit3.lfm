@@ -1,0 +1,19 @@
+object FillBucketWindow: TFillBucketWindow
+  Left = 302
+  Height = 300
+  Top = 855
+  Width = 1120
+  Caption = 'Заполнение ведер'
+  ClientHeight = 300
+  ClientWidth = 1120
+  LCLVersion = '3.4.0.0'
+  object ButtonCancel: TButton
+    Left = 328
+    Height = 41
+    Top = 160
+    Width = 123
+    Caption = 'Отмена'
+    TabOrder = 0
+    OnClick = Cancel
+  end
+end

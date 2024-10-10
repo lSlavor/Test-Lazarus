@@ -1,0 +1,280 @@
+object Form1: TForm1
+  Left = 301
+  Height = 610
+  Top = 110
+  Width = 1120
+  Caption = 'Buckets'
+  ClientHeight = 610
+  ClientWidth = 1120
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '3.4.0.0'
+  object ProgramTitle: TLabel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Left = 493
+    Height = 50
+    Top = 280
+    Width = 134
+    Alignment = taCenter
+    Caption = 'Buckets'
+    Font.Color = clHighlight
+    Font.Height = -37
+    Font.Style = [fsBold]
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object Image1: TImage
+    Left = 16
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image2: TImage
+    Left = 128
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image3: TImage
+    Left = 240
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image4: TImage
+    Left = 352
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Button2: TButton
+    Left = 696
+    Height = 41
+    Top = 256
+    Width = 144
+    Caption = 'Старт (Пуск)'
+    TabOrder = 0
+  end
+  object Button3: TButton
+    Left = 696
+    Height = 41
+    Top = 328
+    Width = 144
+    Caption = 'Пауза (приостановить)'
+    TabOrder = 1
+  end
+  object Image5: TImage
+    Left = 464
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image6: TImage
+    Left = 576
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image7: TImage
+    Left = 688
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image8: TImage
+    Left = 800
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image9: TImage
+    Left = 912
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Image10: TImage
+    Left = 1024
+    Height = 80
+    Top = 80
+    Width = 74
+  end
+  object Label1: TLabel
+    Left = 436
+    Height = 30
+    Top = 24
+    Width = 248
+    Caption = 'Текущее состояние вёдер'
+    Font.Color = 4194304
+    Font.Height = -21
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 1'
+  end
+  object Label3: TLabel
+    Left = 128
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 2'
+  end
+  object Label4: TLabel
+    Left = 240
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 3'
+  end
+  object Label5: TLabel
+    Left = 352
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 4'
+  end
+  object Label6: TLabel
+    Left = 464
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 5'
+  end
+  object Label7: TLabel
+    Left = 576
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 6'
+  end
+  object Label8: TLabel
+    Left = 688
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 7'
+  end
+  object Label9: TLabel
+    Left = 800
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 8'
+  end
+  object Label10: TLabel
+    Left = 912
+    Height = 15
+    Top = 176
+    Width = 42
+    Caption = 'Ведро 9'
+  end
+  object Label11: TLabel
+    Left = 1024
+    Height = 15
+    Top = 176
+    Width = 48
+    Caption = 'Ведро 10'
+  end
+  object Button4: TButton
+    Left = 696
+    Height = 41
+    Top = 400
+    Width = 144
+    Caption = 'Выйти из программы'
+    TabOrder = 2
+    OnClick = CloseProgramMenu
+  end
+  object TrackBar1: TTrackBar
+    Left = 872
+    Height = 25
+    Top = 264
+    Width = 100
+    Max = 100
+    Position = 0
+    TabOrder = 3
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 976
+    Height = 23
+    Top = 266
+    Width = 74
+    TabOrder = 4
+  end
+  object TrackBar2: TTrackBar
+    Left = 872
+    Height = 25
+    Top = 339
+    Width = 100
+    Max = 100
+    Position = 0
+    TabOrder = 5
+  end
+  object SpinEdit2: TSpinEdit
+    Left = 976
+    Height = 23
+    Top = 341
+    Width = 74
+    TabOrder = 6
+  end
+  object Label12: TLabel
+    Left = 872
+    Height = 15
+    Top = 240
+    Width = 121
+    Caption = 'Скорость программы'
+  end
+  object Label13: TLabel
+    Left = 872
+    Height = 15
+    Top = 315
+    Width = 111
+    Caption = 'Вероятность аварии'
+  end
+  object MainMenu1: TMainMenu
+    Left = 8
+    Top = 8
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object MenuItem8: TMenuItem
+        Caption = 'Загрузить'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Сохранить'
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Закрыть программу'
+        OnClick = CloseProgramMenu
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Настройки'
+      object MenuItem5: TMenuItem
+        Caption = 'Покраска вёдер'
+        OnClick = CollorBucket
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Заполнение вёдер'
+        OnClick = WaterBucket
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Справка'
+      object MenuItem7: TMenuItem
+        Caption = 'О программе'
+        OnClick = AboutMenuProgram
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Об авторе'
+        OnClick = AboutAuthor
+      end
+    end
+  end
+end
