@@ -19,7 +19,6 @@
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <CompressFinally Value="False"/>
       <OpenInFileMan Value="True"/>
       <UseFileFilters Value="True"/>
     </PublishOptions>
@@ -83,4 +82,17 @@
       </Options>
     </Linking>
   </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
 </CONFIG>
